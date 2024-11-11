@@ -1,183 +1,1010 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./output.css"></link>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://Meraki-Academy.com" />
+  <meta property="og:title" content="أكاديمية ميراكي" />
+  <meta property="og:description" content="تعلم البرمجة من الصفر واحصل على وظيفة خلال 5 أشهر فقط" />
+  <meta property="og:image" content="https://i.imgur.com/ZxwRoqz.png" />
+
+
+
+  <!-- Google Tag Manager - ID: 1 -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NL63H64Q');</script>
+  <!-- End Google Tag Manager - HERE -->
+
+  <title>MERAKI Academy</title>
+
+  <link rel="icon" href="./assets/meraki-logo.svg" type="image/svg+xml" />
+  <link rel="icon" href="./assets/meraki-logo.svg" sizes="32x32" type="image/png" />
+  <link rel="icon" href="./assets/meraki-logo.svg" sizes="16x16" type="image/png" />
+  <link rel="shortcut icon" href="./assets/meraki-logo.svg" type="image/x-icon" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
 </head>
-<body>
-    <div id="customFormContainer" class="bg-gray-800 border-8 p-8 xl:w-1/2 mx-auto rounded-xl w-5/6 shadow-lg text-justify">
-        <div class="flex h-14 items-center w-full px-4 justify-center pt-1 bg-gray-200/50 rounded-lg mb-1" style="direction: ltr; ">
-            <img src="https://prod-fillout-form-static-images.s3.us-west-2.amazonaws.com/orgid-61809/flowpublicid-hVfpVJN88rus/widgetid-tsMP7CLaS35zKCPuaFeQaC/gGRn9yx9XVgirZK6CHTxpd/logo.png?a=8uBMuPBVGpYJGKH3HVUTSp" alt="Logo" role="presentation" class="max-w-full max-h-[40px] rounded fillout-theme-logo "></div>
-    <form  action="submit" method="POST" class=" space-y-9 w-full" id= "customForm" >
-        <div class="flex flex-col gap-3 justify-evenly w-full">
-       <!----------------------------- Q# --> 
-            <label class=" text-xl  text-white font-bold md:text-right mt-2  pr-4" for="full-name">
-                الاسم الكامل (الأول والأخير) 
-            </label>
-            
-            <input class="bg-gray-600 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white leading-tight text-xl focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500  " id="full-name" type="text" >
-            
-            <!-- -----------------------------Q# --> 
-            <label class=" text-xl  text-white font-bold md:text-right  pr-4 mt-2" for="phoneNumber">
-              رقم الهاتف 
-             </label>
-       
-          <span class="text-white ">إذا كنت من خارج الأردن، يرجى كتابة رمز مفتاح الدولة في بداية الرقم، مثال: 971</span>
-          <input class="bg-gray-600 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white leading-tight text-xl focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500" id="phoneNumber" type="tel" >
-             
-             <!-- -----------------------------Q# --> 
-             <label class=" text-xl  text-white font-bold md:text-right  pr-4" for="email">
-                البريد الإلكتروني 
-               </label>
-               
-               <input class="bg-gray-600 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white leading-tight text-xl focus:outline-none focus:ring-2 focus:ring-purple-500 " id="email" type="email" >
 
+<body class="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-gray-200 font-sans">
 
-               <!-- -----------------------------Q# --> 
-             <label class=" text-xl  text-white font-bold md:text-right  pr-4" for="email">
-                إذا عرفت عن أكاديمية ميراكي عن طريق شخص؟
-               </label>
-              <p class="text-white">اذكرلنا اسمه</p>
-               
-               <input class="bg-gray-600 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white leading-tight text-xl focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500" id="reference" type="text" >
-               <!-- select-------------------------------------------------------- -->
+  <!-- Google Tag Manager (noscript) | ID: 2 -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL63H64Q" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
+  <!-- START THE BODY HERE -->
+  <nav class="main-navbar fixed top-0 left-0 w-full bg-gray-800 text-white z-10 shadow-lg">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center">
+        <!-- Logo on the Left -->
+        <a href="#" class="flex items-center py-5 px-2">
+          <img src="./Company Logos/MERAKI.png" alt="Logo" width="120px" />
+        </a>
 
-               <fieldset>
-                <legend class=" text-xl  text-white font-bold md:text-right  pr-4 mt-2 mb-2">كيف عرفت عن معسكر تعلم البرمجة؟ </legend>
-   <span class="text-white ">اختيار متعدد</span>
-
-                <div class="space-y-2">
-                    <div class="flex items-center gap-2">
-                    <input 
-                      type="checkbox" 
-                      id="Facebook" 
-                      value="Facebook"
-                      class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6 w-6 checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-                    />
-                    <label for="customCheckbox" class=" align-middle text-white text-lg"> فيسبوك | Facebook</label>
-                    </div>
-<!-- --------------------------------------------------------------------------------- -->
-<div class="flex items-center gap-2">
-
-                    <input 
-                    type="checkbox" 
-                    id="Instagram" 
-                    value="Instagram"
-                    class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6 w-6 checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-                  />
-                  <label for="customCheckbox" class=" align-middle text-white text-lg"> انستغرام | Instagram</label>
-                  </div>
-                  <!-- --------------------------------------------------------------------------------- -->
-                  <div class="flex items-center gap-2">
-                  <input 
-                  type="checkbox" 
-                  id="LinkedIn" 
-                  value="LinkedIn"
-                  class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6 w-6 checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-                />
-                <label for="customCheckbox" class=" align-middle text-white text-lg"> لينكد إن | LinkedIn</label>
-            </div>
-              
-
-
-
-  <!-- --------------------------------------------------------------------------------- -->
-  <div class="flex items-center gap-2">
-  <input 
-  type="checkbox" 
-  id="YouTube" 
-value="YouTube"
-  class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6 w-6 checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-/>
-<label for="customCheckbox" class=" align-middle text-white text-lg"> يوتيوب | YouTube</label>
-</div>
-
-  <!-- --------------------------------------------------------------------------------- -->
-  <div class=" relative flex items-center gap-2 ">
-    <input 
-    type="checkbox" 
-    id="Graduate" 
-value="Graduate"
-    class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6  w-6  checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-  />
-  <label for="customCheckbox" class="align-middle  text-white text-lg ">   خريج من أكاديمية ميراكي |
-    MERAKI Academy Graduate </label>
-  </div>
- <!-- --------------------------------------------------------------------------------- -->
- <div class="flex items-center gap-2">
-    <input 
-    type="checkbox" 
-    id="Website" 
-value="Website"
-    class="appearance-none bg-gray-600 border-1 border-gray-300 rounded-md h-6 w-6 checked:bg-purple-500 checked:border-blue-600 focus:ring-2 focus:ring-gray-300 hover:bg-purple-600"
-  />
-  <label for="customCheckbox" class=" align-middle text-white text-lg">  
-    موقع أكاديمية ميراكي | MERAKI Academy Website     </label>
-  </div>
-  
-             
-                    
-                 
-                </div>
-            </fieldset>
-            <!-- ------------------------Q# -->
-            <label class=" text-xl  text-white font-bold md:text-right  pr-4" for="reason">ما هي أهم ثلاثة أسباب دفعتك للتسجيل في أكاديمية ميراكي؟</label>
-            <textarea id="reasons" name="reasons" required class="bg-gray-600 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-white leading-tight text-xl focus:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500  "></textarea>
-
-            <div class="rounded-lg p-4 pr-10 border-1 bg-gray-200/50 border-blue-400 !border-2" ><div class="flex items-center"><div class="flex-shrink-0"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="h-5 w-5 text-blue-400">
-                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"></path></svg></div>
-                <div class="flex justify-center flex-col w-full mr-3 ">
-                    <div class="text-md  text-gray-200 mb-0 w-full font-normal"><div class="relative w-full">
-                        <div class="sc-bfdf9e02-0 foqNfw"><div color="#3b82f6" class="sc-c19eba44-0 cWreut"><div class="relative">
-                            <div class="sc-45061d6d-0 icSYbq"><div id="8Jxjq84ypWQNkwqQch6K9L-label" class="ql-editor !block w-full !bg-none !shadow-none !border-none !p-0" style="border: none; background: transparent; text-align: right; direction: rtl;">
-                                <p class="ql-align-center">لمزيد من التفاصيل يرجى التواصل معنا عن طريق الواتس آب</p><p class="ql-align-center"><strong>00962787875915</strong></p></div></div></div></div></div></div></div><div class="text-sm " style="color: rgb(37, 99, 235);"></div></div></div></div>
-      
-                 <button  type="submit" class=" w-full shadow bg-purple-500 hover:bg-purple-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
-                   Sign Up
-                 </button>
+        <!-- Primary Nav (Centered) -->
+        <div class="hidden lg:flex items-center space-x-1 justify-center flex-grow">
+          <a href="#hero" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">الرئيسية</a>
+          <a href="#featuresID" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">مزايا المعسكر</a>
+          <a href="#benefitsID" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">فوائد المعسكر</a>
+          <a href="#storiesID" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">طلابنا</a>
+          <a href="#companiesID" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">أين يعملون</a>
+          <a href="#faqID" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">الأسئلة المتداولة</a>
+          <a href="careers.html" target="_blank" class="py-5 px-3 text-gray-300 hover:text-gray-100 text-lg">
+            وظائف</a>
         </div>
-         </div>
-         
-      </form>
+
+        <!-- Subscribe Button on the Right -->
+        <a href="https://forms.fillout.com/t/hVfpVJN88rus" target="_blank"
+          class="inline-block bg-purple-600 hover:bg-purple-700 text-gray-200 py-2 px-8 rounded-full text-2xl font-bold tracking-wide pulse-effect">سجل
+          الآن</a>
+
+        <!-- Mobile Menu Button -->
+        <div class="lg:hidden flex items-center">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden lg:hidden">
+      <a href="#hero" class="block py-2 px-4 text-sm hover:bg-gray-700">الرئيسية</a>
+      <a href="#featuresID" class="block py-2 px-4 text-sm hover:bg-gray-700">مزايا المعسكر</a>
+      <a href="#benefitsID" class="block py-2 px-4 text-sm hover:bg-gray-700">فوائد المعسكر</a>
+      <a href="#storiesID" class="block py-2 px-4 text-sm hover:bg-gray-700">طلابنا</a>
+      <a href="#companiesID" class="block py-2 px-4 text-sm hover:bg-gray-700">أين يعملون</a>
+      <a href="#faqID" class="block py-2 px-4 text-sm hover:bg-gray-700">الأسئلة المتداولة</a>
+      <a href="careers.html" class="block py-2 px-4 text-sm hover:bg-gray-700">وظائف</a>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero-section pt-16 pb-24 px-8 text-center flex flex-col justify-between items-center">
+    <!-- Title -->
+    <h1
+      class="text-4xl sm:text-5xl font-bold mb-6 leading-normal sm:leading-normal md:leading-normal lg:leading-normal pt-10">
+      حول <span class="gradient-text">مسيرتك المهنية</span> خلال 22 أسبوع
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="text-1xl lg:text-2xl mb-12 leading-relaxed text-gray-200">
+      اكتشف معنا الطريق لـتعلم البرمجة وافتح لحالك أبواب فرص العمل والاستقرار
+      الوظيفي.
+    </p>
+    <!-- Visual (Placeholder for now) -->
+
+    <div class="xl:mb-8 relative rounded-lg">
+      <script src="https://fast.wistia.com/embed/medias/avc7w638k9.jsonp" async></script>
+      <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+      <div class="wistia_responsive_padding youtube-video" style="padding: 56.25% 0 0 0; position: relative">
+        <div class="wistia_responsive_wrapper" style="
+              height: 100%;
+              left: 0;
+              position: absolute;
+              top: 0;
+              width: 100%;
+            ">
+          <div class="wistia_embed wistia_async_avc7w638k9 seo=true videoFoam=true autoplay=true"
+            style="height: 100%; position: relative; width: 100%">
+            <div class="wistia_swatch" style="
+                  height: 100%;
+                  left: 0;
+                  opacity: 0;
+                  overflow: hidden;
+                  position: absolute;
+                  top: 0;
+                  transition: opacity 200ms;
+                  width: 100%;
+                ">
+              <img src="https://fast.wistia.com/embed/medias/avc7w638k9/swatch" style="
+                    filter: blur(5px);
+                    height: 100%;
+                    object-fit: contain;
+                    width: 100%;
+                  " alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Proof -->
+    <div class="text-1xl lg:text-2xl mb-6 text-gray-200">
+      93% من خريجين معسكر البرمجة بيحصلوا على عقد عمل
+    </div>
+
+    <!-- Call to Action -->
+
+    <!-- <a
+        href="https://forms.fillout.com/t/hVfpVJN88rus"
+        target="_blank"
+        class="inline-block bg-purple-600 hover:bg-purple-700 text-gray-200 py-2 px-16 rounded-full text-2xl font-bold tracking-wide pulse-effect"
+      >
+        سجل الآن
+      </a> -->
+    <div id="filloutContainer" class="pulse-effect" data-fillout-id="hVfpVJN88rus" data-fillout-embed-type="popup"
+      data-fillout-button-color="#6324a3" data-fillout-button-size="large" data-fillout-inherit-parameters></div>
+  </section>
+  <section id="featuresID" class="features pb-20 pt-8 px-10 text-center space-y-16 text-white">
+    <!-- Section Title -->
+    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+      <span class="gradient-text">مزايا </span>
+      <span class="gradient-text"></span>
+      معسكر البرمجة
+    </h2>
+
+    <!-- Features -->
+
+    <div class="features space-y-12">
+      <div class="grid grid-cols-1 xl:grid-cols-2 gap-12">
+        <!-- Each card represents a feature -->
+
+        <!-- First Point -->
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold sm:leading-normal md:leading-normal lg:leading-normal">
+                غير مسارك وانت بشغلك
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                بتقدر تلتحق بالمعسكر وتتعلم برمجة من دون ما تترك شغلك
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_quitting_time_re_1whp.svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Point -->
+
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal sm:leading-normal md:leading-normal lg:leading-normal font-semibold">
+                ما بتحتاج خبرة بالبرمجة
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                حتى لو ما عمرك جربت تبرمج، مع ميراكي بنبلش من الصفر
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_programmer_re_owql.svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Third Point -->
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold sm:leading-normal md:leading-normal lg:leading-normal">
+                جرب المعسكر لمدة 6 أسابيع
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                أول اسبوع من المعسكر مجاني، وأول 6 أسابيع مغطية برسوم التسجيل
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_time_management_re_tk5w.svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Fourth Point -->
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold sm:leading-normal md:leading-normal lg:leading-normal">
+                بتقدر تقسط التكلفة!
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                ما في داعي تضغط حالك ماديا، مع ميراكي بتقدر تقسط الرسوم على
+                سنة
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_savings_re_eq4w.svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Fifth Point -->
+
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold sm:leading-normal md:leading-normal lg:leading-normal">
+                مرونة في الأوقات
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                مع وجود شعبة صباحية ومسائية، أكيد راح تلاقي وقت للالتزام
+                بالمعسكر
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_selection_re_ycpo.svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Sixth Point -->
+        <div
+          class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform hover:scale-101">
+          <div
+            class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all hover:shadow-2xl flex flex-row-reverse items-center">
+            <!-- Text Content -->
+            <div class="flex-grow mr-4">
+              <h4
+                class="text-xl sm:text-2xl md:text-3xl lg:text-4xl leading-normal font-semibold sm:leading-normal md:leading-normal lg:leading-normal">
+                حنضل معك لتلاقي شغل
+              </h4>
+              <!-- Subheading -->
+              <p
+                class="text-sm sm:text-base md:text-lg lg:text-xl mt-2 leading-normal sm:leading-normal md:leading-normal lg:leading-normal">
+                المرحلة الأخيرة من المعسكر بتجهزك لسوق العمل بحيث تكون جاهز
+                بشكل كامل
+              </p>
+            </div>
+            <div>
+              <img src="assets/undraw_designer_re_5v95 (1).svg" alt="" width="100px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="benefitsID" class="benefits pb-20 pr-4 px-10 text-center space-y-8 text-white">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-16 leading-tight">
+      <span class="gradient-text">فوائد</span>
+      <span class="gradient-text"></span>
+      معسكر البرمجة
+    </h2>
+    <!-- Benefit 1 -->
+    <div class="grid lg:grid-cols-2 gap-8 items-center">
+      <div class="flex items-center justify-end p-4 text-right space-x-4">
+        <span
+          class="gradient-number text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-bold px-4 pl-6 lg:pl-16 lg:pr-10">1</span>
+        <div>
+          <h2 class="lg:text-3xl 2xl:text-5xl text-2xl font-bold mb-2 text-purple-400 1xl:text-4xl pb-4">
+            قطاع البرمجة مختلف ومميز
+          </h2>
+          <p
+            class="md:text-2xl lg:text-2.5xl text-xl 2xl:text-3xl 2xl:leading-relaxed lg:leading-relaxed md:leading-relaxed leading-relaxed text-justify">
+            النمو المهني والرواتب العالية في مجال البرمجة حقيقة مثبتة
+            بالأرقام. هاد غير عن نسبة الطلب العالية على المبرمجين، يعني حتى لو
+            ما كان عندك خبرة سابقة، رح تكون جاهز لتحقيق هاي الأحلام وأكثر
+          </p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center p-4">
+        <img src="assets/coding-img.svg" alt="Illustration of Benefit 1"
+          class="h-auto w-3/4 max-w-xs sm:max-w-sm md:max-w-md" />
+      </div>
+    </div>
+
+    <!-- Benefit 2 -->
+    <div class="grid lg:grid-cols-2 gap-8 items-center mb-12">
+      <div class="flex items-center justify-end p-4 text-right space-x-4">
+        <span
+          class="gradient-number text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-bold px-4 pl-6 lg:pl-16 lg:pr-10">2</span>
+        <div>
+          <h2 class="lg:text-3xl 2xl:text-5xl text-2xl font-bold mb-2 text-purple-400 1xl:text-4xl pb-4">
+            خبرة عملية
+          </h2>
+          <p
+            class="md:text-2xl lg:text-2.5xl text-xl 2xl:text-3xl 2xl:leading-relaxed lg:leading-relaxed md:leading-relaxed leading-relaxed text-justify">
+            تدريبنا بيحضرك للتحديات الحقيقية بالشغل. بعد المعسكر, رح تكون جاهز
+            تساهم وتشتغل بكفاءة من أول يوم الك بالشركة. غير انه مستوى خريجين
+            ميراكي بنافس خريجين الجامعات
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center p-4">
+        <img src="assets/experienced-dev.svg" alt="Illustration of Benefit 2"
+          class="h-auto w-3/4 max-w-xs sm:w-full sm:max-w-sm md:max-w-md" />
+      </div>
+    </div>
+
+    <!-- Benefit 3 -->
+    <div class="grid lg:grid-cols-2 gap-8 items-center mb-12">
+      <div class="flex items-center justify-end p-4 text-right space-x-4">
+        <span
+          class="gradient-number text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-bold px-4 pl-6 lg:pl-16 lg:pr-10">3</span>
+        <div>
+          <h2 class="lg:text-3xl 2xl:text-5xl text-2xl font-bold mb-2 text-purple-400 1xl:text-4xl pb-4">
+            استقلالية مالية وأمان وظيفي
+          </h2>
+          <p
+            class="md:text-2xl lg:text-2.5xl text-xl 2xl:text-3xl 2xl:leading-relaxed lg:leading-relaxed md:leading-relaxed leading-relaxed text-justify">
+            مع نسبة توظيفنا العالية، 93% من طلابنا بيتوظفوا خلال شهرين من
+            التخرج. لأنه بميراكي، في فترة دعم مستمر بعد التخرج لحد ما تحصل على
+            وظيفة
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center p-4">
+        <img src="assets/personal-finance-animate.svg" alt="Illustration of Benefit 3"
+          class="h-auto w-3/4 max-w-xs sm:w-full sm:max-w-sm md:max-w-md" />
+      </div>
+    </div>
+
+    <!-- Benefit 4 -->
+    <div class="grid lg:grid-cols-2 gap-8 items-center mb-12">
+      <div class="flex items-center justify-end p-4 text-right space-x-4">
+        <span
+          class="gradient-number text-6xl sm:text-6xl md:text-6xl lg:text-8xl font-bold px-4 pl-6 lg:pl-16 lg:pr-10">4</span>
+        <div>
+          <h2 class="lg:text-3xl 2xl:text-5xl text-2xl font-bold mb-2 text-purple-400 1xl:text-4xl pb-4">
+            اختار أسلوب الحياة اللي بناسبك
+          </h2>
+          <p
+            class="md:text-2xl lg:text-2.5xl text-xl 2xl:text-3xl 2xl:leading-relaxed lg:leading-relaxed md:leading-relaxed leading-relaxed text-justify">
+            مع مهاراتك الجديدة، بتقدر تشتغل بشركات برمجة بتقدم بيئة عمل ممتازة
+            وفرص عمل عن بُعد، أو حتى تبدأ مشروعك الخاص وتشتغل حر.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center p-4">
+        <img src="assets/working-from-anywhere-animate.svg" alt="Illustration of Benefit 4"
+          class="h-auto w-3/4 max-w-xs sm:w-full sm:max-w-sm md:max-w-md" />
+      </div>
+    </div>
+  </section>
+
+  <section id="storiesID" class="social-proof pb-4 px-10 text-center space-y-16">
+    <!-- Section Title -->
+    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
+      <span class="gradient-text">قصص نجاح</span> طلابنا
+    </h2>
+
+    <!-- Testimonials -->
+    <div class="testimonials grid grid-cols-1 lg:grid-cols-2 gap-12">
+      <!-- Testimonial 1 -->
+      <div class="testimonial p-6 rounded-lg shadow-lg bg-gray-800 grid grid-cols-4 items-center gap-4">
+        <!-- Testimonial Text -->
+        <p class="text-1xl sm:text-2xl col-span-4 mb-6">
+          "معسكر ميراكي ساعدني أحقق حلمي بأني أكون مبرمجة. ما كان عندي خبرة
+          بالبرمجة، بس الآن أنا بشتغل بشركة معروفة. الدعم اللي تلقيته من
+          الأكاديمية والمدربين كان رائع. شكرًا ميراكي!"
+        </p>
+
+        <!-- Image & Name -->
+        <div class="col-span-3 flex items-center">
+          <img src="assets/Ahlam-jawahreh.jpeg" alt="Student 1" class="rounded-full mr-4" width="80" height="80" />
+          <div class="mr-4">
+            <h4 class="text-xs font-bold">أحلام الجواهرة</h4>
+            <p class="text-xs">Coded Enterprise</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn Logo at bottom left -->
+        <div class="col-span-1 flex justify-end">
+          <a href="https://www.linkedin.com/in/ahlam-aljawahreh/" target="_blank">
+            <img src="./assets/linkedin logo.png" alt="LinkedIn" class="w-12 h-12" />
+          </a>
+        </div>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-lg bg-gray-800 grid grid-cols-4 items-center gap-4">
+        <!-- Testimonial Text -->
+        <p class="text-1xl sm:text-2xl col-span-4 mb-6">
+          المعسكر غير حياتي! كنت ما بعرف شي بالبرمجة، وهلأ صرت ببرمج تطبيقات
+          كاملة. المدربين كتير فهمانين والجو عائلي. ميراكي فعلاً فرصة ما
+          بتتعوض."
+        </p>
+
+        <!-- Image & Name -->
+        <div class="col-span-3 flex items-center">
+          <img src="assets/Anas-hawi.jpeg" alt="Student 1" class="rounded-full mr-4" width="80" height="80" />
+          <div class="mr-4">
+            <h4 class="text-xs font-bold">أنس الحاوي</h4>
+            <p class="text-xs">ESKADENIA Software</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn Logo at bottom left -->
+        <div class="col-span-1 flex justify-end">
+          <a href="https://www.linkedin.com/in/anas-hawi/" target="_blank">
+            <img src="./assets/linkedin logo.png" class="w-12 h-12" />
+          </a>
+        </div>
+      </div>
+
+      <div class="testimonial p-6 rounded-lg shadow-lg bg-gray-800 grid grid-cols-4 items-center gap-4">
+        <!-- Testimonial Text -->
+        <p class="text-1xl sm:text-2xl col-span-4 mb-6">
+          "معسكر ميراكي فتحلي أبواب كتير بعالم ال IT. طريقة التعليم العملية
+          والمشاريع اللي اشتغلنا عليها ساعدوني اكتسب خبرات حقيقية. والأحلى إني
+          لقيت شغل قبل ما أخلص المعسكر!"
+        </p>
+
+        <!-- Image & Name -->
+        <div class="col-span-3 flex items-center">
+          <img src="assets/Basil.jpeg" alt="Student 1" class="rounded-full mr-4" width="80" height="80" />
+          <div class="mr-4">
+            <h4 class="text-xs font-bold">باسل اللبدي</h4>
+            <p class="text-xs">ESKADENIA Software</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn Logo at bottom left -->
+        <div class="col-span-1 flex justify-end">
+          <a href="https://www.linkedin.com/in/basilallabadi/" target="_blank">
+            <img src="./assets/linkedin logo.png" class="w-12 h-12" />
+          </a>
+        </div>
+      </div>
+      <div class="testimonial p-6 rounded-lg shadow-lg bg-gray-800 grid grid-cols-4 items-center gap-4">
+        <!-- Testimonial Text -->
+        <p class="text-1xl sm:text-2xl col-span-4 mb-6">
+          "أنا كنت شاكة في البداية، بس بعد ما جربت، اكتشفت إنه أفضل قرار
+          اتخذته. المنهج مصمم بطريقة تخليك تتعلم بسرعة. والأهم، مشروع التخرج
+          عطاني خبرة عملية ممتازة."
+        </p>
+
+        <!-- Image & Name -->
+        <div class="col-span-3 flex items-center">
+          <img src="assets/Hala Nazeeh.jpeg" alt="Student 1" class="rounded-full mr-4" width="80" height="80" />
+          <div class="mr-4">
+            <h4 class="text-xs font-bold">هلا نزيه</h4>
+            <p class="text-xs">Self-Employed</p>
+          </div>
+        </div>
+
+        <!-- LinkedIn Logo at bottom left -->
+        <div class="col-span-1 flex justify-end">
+          <a href="https://www.linkedin.com/in/hala-nazeeh/" target="_blank">
+            <img src="./assets/linkedin logo.png" class="w-12 h-12" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="text-2xl lg:text-3xl mb-12 leading-relaxed">
+      أحلام الجواهرة إحدى خريجين أكاديمية ميراكي بتحكي عن تجربتها بهاد الفيديو
+    </p>
+    <div class="flex justify-center items-center">
+      <div class="mb-12 relative overflow-hidden rounded-lg mx-auto">
+        <script src="https://fast.wistia.com/embed/medias/ehrizrrh4m.jsonp" async></script>
+        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+        <div class="wistia_responsive_padding youtube-video" style="padding: 56.25% 0 0 0; position: relative">
+          <div class="wistia_responsive_wrapper" style="
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+              ">
+            <div class="wistia_embed wistia_async_ehrizrrh4m seo=true videoFoam=true"
+              style="height: 100%; position: relative; width: 100%">
+              <div class="wistia_swatch" style="
+                    height: 100%;
+                    left: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 0;
+                    transition: opacity 200ms;
+                    width: 100%;
+                  ">
+                <img src="https://fast.wistia.com/embed/medias/ehrizrrh4m/swatch" style="
+                      filter: blur(5px);
+                      height: 100%;
+                      object-fit: contain;
+                      width: 100%;
+                    " alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div id="question-divider"
+    class="flex items-center justify-center space-x-2 py-20 mb-16 bg-gradient-to-b from-indigo-800 to-violet-800 leading-loose">
+    <p class="text-2xl lg:text-3xl text-gray-200 font-bold px-8 text-center">
+      انتبه! احنا مش دورة تدريبية، احنا بنقدم معسكر تدريبي شامل مدته 5 أشهر
+      بيحتاج جهد ووقت
+    </p>
+  </div>
+  <!-- Where Our Graduates Work Section -->
+  <section id="companiesID" class="partner-companies py-15">
+    <!-- Section Title -->
+    <div class="text-center mb-16">
+      <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <span class="gradient-text">أين يعمل</span>
+        خريجونا؟
+      </h2>
+    </div>
+
+    <!-- Logos Grid -->
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+      <!-- Company Logo 1 -->
+      <div class="flex justify-center">
+        <img src="./Company Logos/Aspire.png" alt="Company 2" class="h-24" />
+      </div>
+
+      <!-- Company Logo 2 -->
+      <div class="flex justify-center">
+        <img src="./Company Logos/Mawdoo3.png" alt="Company 2" class="h-24" />
+      </div>
+      <!-- Company Logo 3 -->
+      <div class="flex justify-center">
+        <img src="./Company Logos/Avertra_Corp.png" alt="Company 3" class="h-24" />
+      </div>
+      <!-- Company Logo 4 -->
+      <div class="flex justify-center">
+        <img src="./Company Logos/AOC.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Business_Chat.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/DIS.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/EMMA_Systems.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Master_Works.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Mykloud.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Nadsoft.svg" alt="Company 4" class="h-24 w-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Omicron.png" alt="Company 4" class="h-24" />
+      </div>
+      <div class="flex justify-center">
+        <img src="./Company Logos/Tahaluf_Al_Emarat.png" alt="Company 4" class="h-24" />
+      </div>
+      <!-- Add more logos as needed... -->
+    </div>
+  </section>
+
+  <section id="question-answer"
+    class="bg-gray-100 border-8 p-8 xl:w-1/2 my-6 mx-auto rounded-xl w-5/6 animated-border shadow-lg text-justify">
+    <div class="max-w-4xl mx-auto text-gray-700">
+      <h2 class="text-2xl font-bold mb-8 text-center">
+        🚀 طالما راح تجتهد معنا وتشتغل بكل طاقتك، موضوع الوظيفة بصير جدا سهل
+        عليك
+      </h2>
+      <p class="mb-4 leading-loose">
+        <span class="font-bold text-purple-800">
+          🧠 المنهاج الأساسي لبرمجمة المواقع</span>
+        -
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">أكثر من 400 ساعة من المواد، بتغطي كل شيء
+        </span>
+        بدءًا من أساسيات HTML وCSS وJavaScript وصولاً إلى المفاهيم المتقدمة في
+        البرمجة، والمزيد. مع نهاية المعسكر، راح يكون عندك القدرة تبني مشاريع
+        واقعية مماثلة لمشاريع عملاقة مثل Facebook و YouTube و Amazon.
+      </p>
+      <p class="mb-4 leading-loose">
+        📚
+        <span class="font-bold text-purple-800">المنهاج التدريبي </span>
+        - راح يكون في أوقات مخصصة للمشاريع، للواجبات المنزلية، والمساعدة
+        والمراجعة، عشان تضمن تمارس الأمور النظرية
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">بشكل عملي وملائم لسوق العمل.
+        </span>
+      </p>
+      <p class="mb-4 leading-loose">
+        🔑
+        <span class="font-bold text-purple-800">تواجدنا الدائم بجانب الطلاب -</span>
+        راح نكون معك خطوة بخطوة مش بس وقت المعسكر، وكمان بعد التخرج
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">بإمكانك تتواصل معنا بأي وقت
+        </span>
+        وراح نساعدك بأي مشكلة أو تحدي بواجهك
+      </p>
+      <p class="mb-4 leading-loose">
+        <span class="font-bold text-purple-800"> 💪 الدعم الوظيفي</span>
+
+        - معسكرنا التدريبي ما بيقتصر على الأمورر التقنية، راح نجهزك لسوق العمل
+        من خلال ورش عمل للسيرة الذاتية، وتحسين ملف LinkedIn الشخصي، والتحضير
+        للمقابلات،
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">ودعم البحث عن وظيفة لمدة بتوصل إلى 8 أشهر
+          بعد التخرج
+        </span>
+        لضمان حصولك على الوظيفة التي بتحلم فيها.
+      </p>
+      <p class="mb-4 leading-loose">
+        📕
+        <span class="font-bold text-purple-800">مصادر عمل وموارد تفاعلية</span>
+        المصادر التعليمية والعملية اللي راح نشاركهها معك راح تكون
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">شاملة لكل المواضيع التقنية والغير تقنية
+        </span>
+        بحيث تكون جاهز لكل التحديات في المستقبل
+      </p>
+      <p class="mb-4 leading-loose">
+        🚀
+        <span class="font-bold text-purple-800">التقديم للوظائف</span> - مع
+        دعمنا المتخصص في المرحلة الرابعة من المعسكر، راح نضمن تجهيزك لسوق
+        العمل بأفضل شكل ممكن مع توجيهات
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">مخصصة لسيرتك الذاتية
+        </span>
+        ، ونظام مبني على أسس للتقديم على الوظائف بيضمن لك فرص بشكل كبير.
+      </p>
+
+      <p class="mb-4 leading-loose">
+        💡
+        <span class="font-bold text-purple-800">الابتكار والإبداع المستمر</span>
+        المنهاج في أكاديمية ميراكي بتم
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">إعادة تحديثة ومراجعته كل 6 أشهر
+        </span>
+        لحتى نضمن إنه كل المعلومات اللي بندربك عليها هي أحدث اشي موجود في عالم
+        البرمجة
+      </p>
+      <p class="mb-4 leading-loose">
+        📗
+        <span class="font-bold text-purple-800">مهارات سوق العمل الحقيقية</span>
+        - راح تتعلم مهارات التعاون والعمل الجماعي من خلال مشاريعنا اللي بتحاكي
+        بيئات العمل الواقعية
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">وبتأهلك للانخراط في بيئات العمل بالشركات
+          التقنية.
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <!-- 4. FAQ (Frequently Asked Questions) -->
+  <section id="faqID" class="faq py-20 px-10 text-center space-y-16">
+    <!-- Section Title -->
+    <h2 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-16 leading-tight">
+      الأسئلة <span class="gradient-text">المتداولة</span>
+    </h2>
+    <div class="max-w-4xl mx-auto space-y-8">
+      <!-- Question 1 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            ما هو معسكر أكاديمية ميراكي لتعلّم البرمجة؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          هو برنامج تدريبي مكثّف، طريقة التعليم فيه غير تقليدية، مدته 5 أشهر
+          (ما يعادل 400 ساعة تدريبية)، بنبلش بتعليمك أساسيات البرمجة من الصفر
+          بغض النظر عن تخصصك أو خلفيتك البرمجية، وبعديها بندربك على كيفية
+          برمجة وتصميم المواقع الإلكترونية بالكامل Full-Stack، وبالنهاية
+          بنجهزك لسوق العمل من خلال تدريبك على كيفية عمل سيرة ذاتية احترافية
+          وضبط حسابك على LinkedIn وتدريبك على مقابلات العمل وأسئلتها.
+        </div>
+      </div>
+      <!-- Question 2 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            متى ينتهي التسجيل بالفوج القادم؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          آخر موعد للتسجيل يكون عند اكتمال عدد الطلاب لأن عدد المقاعد محدودة.
+        </div>
+      </div>
+      <!-- Question 3 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            كم مدة المعسكر؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          مدة المعسكر 5 أشهر
+        </div>
+      </div>
+      <!-- Question 4 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            كم عدد المحاضرات في الأسبوع وكم مدة المحاضرة؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          عدد المحاضرات 3 أيام في الأسبوع، و5 ساعات مدة المحاضرة
+        </div>
+      </div>
+      <!-- Question 5 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            المعسكر أونلاين أو وجاهي؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          المعسكر أونلاين، والمحاضرات تعطى بشكل مباشر عبر تطبيق zoom
+        </div>
+      </div>
+      <!-- Question 6 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            هل شرط أكون متفرغ لأقدر انضم للمعسكر؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          لا مش شرط، ولكن المعسكر بحتاج لجهد كبير وتركيز عالي، فكل ساعة إضافية
+          بتبذلها بالدراسة بترفع من مستواك، وبنفس الوقت عنا قصص نجاح كثيرة
+          لطلاب كانوا موظفين بدوام كامل بنفس وقت انضمامهم للمعسكر.
+        </div>
+      </div>
+      <!-- Question 7 -->
+      <div class="border-b border-gray-300 pb-8">
+        <div class="faq-container flex justify-between items-center">
+          <div class="faq-question text-xl md:text-2xl font-bold mb-4 cursor-pointer text-right">
+            هل شرط يكون معي شهادة بمجال IT لأقدر أحصل على وظيفة في مجال
+            البرمجة؟
+          </div>
+          <div class="arrow-down cursor-pointer mr-4 text-4xl">&lt;</div>
+        </div>
+        <div class="faq-answer text-base md:text-lg hidden text-justify">
+          لا مش شرط، لأنه في سوق العمل المهم هو جهدك ومثابرتك وسرعة التعلم
+          الذاتي بالإضافة للمهارات اللي راح تتعلمها خلال معسكرنا بالإضافة انه
+          راح ندربك على مقابلات العمل وكيفية عمل سيرة ذاتية احترافية.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- New Download Guide Section -->
+  <div id="info-navbar"
+    class="text-2xl top-0 left-0 w-full bg-gradient-to-r from-purple-500 to-blue-500 text-purple-100 text-center shadow-md z-50 pb-0">
+    <div class="p-3 flex items-center justify-center space-x-4">
+      <div class="text-5xl ml-4">←</div>
+      <div>
+        للمزيد من المعلومات
+        <a href="https://rebrand.ly/MerakiAcademyJO_PDFinfo"
+          class="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-1 px-3 rounded transition duration-300 ease-in-out"
+          target="_blank" rel="noopener noreferrer">
+          يمكنك تحميل الدليل من هنا
+        </a>
+      </div>
+      <div class="text-5xl">→</div>
+    </div>
+  </div>
+
+  <section id="countdownSection" class="text-center py-12">
+    <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-16 leading-tight">
+      آخر <span class="gradient-text">موعد للتسجيل</span>
+    </h2>
+    <div class="flex justify-center">
+      <div id="countdownContainer"
+        class="gradient-div rounded-lg bg-gradient-to-l from-purple-400 via-purple-200 to-gray-300 p-1 flex transition-transform transform w-5/6 xl:w-2/5">
+        <div
+          class="feature-card w-full p-8 rounded-lg bg-gray-800 shadow-lg transition-all flex items-center justify-center">
+          <div id="countdown" class="flex justify-center gap-5">
+            <!-- Countdown units: Days, Hours, Minutes, Seconds -->
+          </div>
+          <div id="urgentMessage" class="text-2xl font-semibold text-purple-400 hidden"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="money-back" class="bg-gradient-to-r from-purple-500 to-blue-500 p-10">
+    <div class="text-justify max-w-4xl mx-auto bg-gray-100 rounded-xl shadow-lg p-8 text-gray-800">
+      <h2 class="text-4xl mb-4 text-center border-b-2 pb-4 border-purple-400">
+        جرب أول أسبوع مجانا
+      </h2>
+      <p class="text-lg font-bold mb-4 text-purple-800">
+        جرب المعسكر التدريبي من أكاديمية ميراكي مع ضمان استرداد رسوم التسجيل.
+        😉
+      </p>
+      <p class="mb-4">
+        <span class="bg-gradient-to-r from-amber-200 to-yellow-300 rounded-md">عشان تعرف الفرق بين المعسكر التدريبي
+          والدورة العادية،</span>
+        حبينا نقدم أول أسبوع من معسكر البرمجة مع ضمان استرداد رسوم التسجيل في
+        حال عدم الرضى. ليش؟ لأنه في كتير ناس بتفكر انه المعسكر التدريبي ما
+        بيختلف عن أي دورة ممكن ياخدوها واللي عادة بتكون الساعات العملية فيها
+        قليلة جدا أو غير متوفرة أصلا بالمقارنة مع عدد الساعات النظرية.
+        <span class="font-bold">هاد الإشي بخلي الطالب يراكم شهادات من دون فائدة فعلية</span>
+        و بتنعكس على حياته المهنية.
+      </p>
+      <p>
+        نسبة <span class="font-bold text-purple-800">98% من الطلاب </span>اللي
+        بجربوا أول أسبوع من المعسكر التدريبي بقرروا انهم يكملوا المشوار معنا،
+        <span class="text-purple-800">تواصل معنا وما راح تخسر لو جربت أول أسبوع</span>
+      </p>
+    </div>
+  </section>
+  <!-- <section
+      id="join-our-team"
+      class="join-our-team pb-10 pt-8 px-10 text-center space-y-16"
+    >
+      
+      <h2
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight"
+      >
+        انضم إلى <span class="gradient-text"> فريق ميراكي</span>
+      </h2>
+
+     
+      <p
+        class="text-lg sm:text-1xl md:text-2xl leading-normal sm:leading-normal md:leading-normal lg:leading-normal pb-8"
+      >
+        نحن نبحث عن مواهب استثنائية لتكون جزءًا من رحلتنا التعليمية.
+      </p>
+
+     
+      <a
+        href="jobs.html"
+        target="_blank"
+        class="text-lg bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded transition duration-300"
+      >
+        عرض الوظائف
+      </a>
+    </section> -->
+  <!-- 5. Final Call to Action -->
+  <section class="final-cta py-15 mt-9 px-10 text-center">
+    <h2 class="text-2xl font-bold mb-12 leading-tight xl:text-3xl">
+      لا تفوت فرصتك! 93% من طلابنا اشتغلوا بعد المعسكر. سجل وكون واحد منهم!
+    </h2>
+<div id="htmlForm"></div>
+    <!-- <div id="fillout-form-container" class="w-full mx-auto pb-8 xl:w-1/2" data-fillout-id="hVfpVJN88rus"
+      data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div> -->
+
+    <!-- <script src="https://server.fillout.com/embed/v1/"></script> -->
+    <!-- <a
+        href="https://forms.fillout.com/t/hVfpVJN88rus"
+        target="_blank"
+        class="inline-block bg-purple-500 hover:bg-purple-600 text-gray-50 py-4 px-16 rounded-full text-2xl font-bold tracking-wide mb-16"
+      >
+        سجل الآن
+      </a> -->
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="text-gray-400 py-6 px-10 text-center bg-gray-700 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <div></div>
+    <div class="container mx-auto text-sm">
+      جميع الحقوق محفوظة © 2023 أكاديمية ميراكي
+    </div>
+    <div>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start gap-4">
+        <!-- Email -->
+        <a href="mailto:info@meraki-academy.org" class="ml-3 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M18 8v9a2 2 0 01-2 2H4a2 2 0 01-2-2V8l8 5 8-5zm0-2l-8 5-8-5V5a2 2 0 012-2h12a2 2 0 012 2z" />
+          </svg>
+        </a>
+
+        <!-- Twitter -->
+        <a href="https://www.twitter.com/merakiacademyjo" class="ml-3 text-gray-400">
+          <img src="assets/x-logo.png" alt="Twitter Logo" class="w-5 h-5" />
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/school/merakiacademyjo/" class="ml-3 text-gray-400">
+          <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <path stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/merakiacademyjo" class="ml-3 text-gray-400">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/merakiacademyjo" class="text-gray-400">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/962787875915" target="_blank" id="whatsappChat"
+    class="fixed bottom-5 left-5 flex items-center justify-center w-10 h-10">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+      <path fill="#fff"
+        d="M4.9,43.3l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24	c0,10.5-8.5,19-19,19c0,0,0,0,0,0h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3z">
+      </path>
+      <path fill="#fff"
+        d="M4.9,43.8c-0.1,0-0.3-0.1-0.4-0.1c-0.1-0.1-0.2-0.3-0.1-0.5L7,33.5c-1.6-2.9-2.5-6.2-2.5-9.6	C4.5,13.2,13.3,4.5,24,4.5c5.2,0,10.1,2,13.8,5.7c3.7,3.7,5.7,8.6,5.7,13.8c0,10.7-8.7,19.5-19.5,19.5c-3.2,0-6.3-0.8-9.1-2.3	L5,43.8C5,43.8,4.9,43.8,4.9,43.8z">
+      </path>
+      <path fill="#cfd8dc"
+        d="M24,5c5.1,0,9.8,2,13.4,5.6C41,14.2,43,18.9,43,24c0,10.5-8.5,19-19,19h0c-3.2,0-6.3-0.8-9.1-2.3L4.9,43.3	l2.7-9.8C5.9,30.6,5,27.3,5,24C5,13.5,13.5,5,24,5 M24,43L24,43L24,43 M24,43L24,43L24,43 M24,4L24,4C13,4,4,13,4,24	c0,3.4,0.8,6.7,2.5,9.6L3.9,43c-0.1,0.3,0,0.7,0.3,1c0.2,0.2,0.4,0.3,0.7,0.3c0.1,0,0.2,0,0.3,0l9.7-2.5c2.8,1.5,6,2.2,9.2,2.2	c11,0,20-9,20-20c0-5.3-2.1-10.4-5.8-14.1C34.4,6.1,29.4,4,24,4L24,4z">
+      </path>
+      <path fill="#40c351"
+        d="M35.2,12.8c-3-3-6.9-4.6-11.2-4.6C15.3,8.2,8.2,15.3,8.2,24c0,3,0.8,5.9,2.4,8.4L11,33l-1.6,5.8l6-1.6l0.6,0.3	c2.4,1.4,5.2,2.2,8,2.2h0c8.7,0,15.8-7.1,15.8-15.8C39.8,19.8,38.2,15.8,35.2,12.8z">
+      </path>
+      <path fill="#fff" fill-rule="evenodd"
+        d="M19.3,16c-0.4-0.8-0.7-0.8-1.1-0.8c-0.3,0-0.6,0-0.9,0s-0.8,0.1-1.3,0.6c-0.4,0.5-1.7,1.6-1.7,4	s1.7,4.6,1.9,4.9s3.3,5.3,8.1,7.2c4,1.6,4.8,1.3,5.7,1.2c0.9-0.1,2.8-1.1,3.2-2.3c0.4-1.1,0.4-2.1,0.3-2.3c-0.1-0.2-0.4-0.3-0.9-0.6	s-2.8-1.4-3.2-1.5c-0.4-0.2-0.8-0.2-1.1,0.2c-0.3,0.5-1.2,1.5-1.5,1.9c-0.3,0.3-0.6,0.4-1,0.1c-0.5-0.2-2-0.7-3.8-2.4	c-1.4-1.3-2.4-2.8-2.6-3.3c-0.3-0.5,0-0.7,0.2-1c0.2-0.2,0.5-0.6,0.7-0.8c0.2-0.3,0.3-0.5,0.5-0.8c0.2-0.3,0.1-0.6,0-0.8	C20.6,19.3,19.7,17,19.3,16z"
+        clip-rule="evenodd"></path>
+    </svg>
+  </a>
+  <button id="backToTop"
+    class="fixed bottom-5 right-5 flex items-center justify-center w-10 h-10 rounded-full bg-purple-600 hover:bg-purple-700 focus:bg-purple-800 shadow-lg text-white font-bold opacity-0 transition-opacity duration-300 ease-in-out z-50 text-3xl">
+    ↑
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="main.js"></script>
+  <script src="https://server.fillout.com/embed/v1/"></script>
 </body>
 
-    <script>
-
- document.getElementById('customForm').addEventListener('submit', async function (e) {
-  e.preventDefault();
-
-  const formData = new FormData(e.target);
-  const data = Object.fromEntries(formData.entries());
-
-  console.log('Form Data:', data);
-
-  try {
-    const response = await fetch(
-      'https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbz1FYD9aPxOjvJ0uWwx-xE8fFZ9Dh_FzMEAMUBPEuMLSq8z-E1jIO83z-knB1FY4llt/exec',
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      }
-    );
-
-    if (!response.ok) {
-      throw new Error(`HTTP error! Status: ${response.status}`);
-    }
-
-    const result = await response.json();
-    console.log('Response from server:', result);
-  } catch (error) {
-    console.error('Error:', error);
-  }
-});
-
-</script>
-</body>
 </html>
