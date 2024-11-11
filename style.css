@@ -1,0 +1,38 @@
+/* Basic styling for modal and form */
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    direction: rtl; }
+  
+  .modal {
+    display: none; 
+    /* position: fixed; */
+    z-index: 1; 
+    /* left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.4);  */
+  }
+  
+  /* .modal-content {
+    background-color: #f7efef;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  } */
+   .close{
+    font-size: x-large;
+    height: 20px;
+   }
+  
+  .hidden {
+    display: none;
+  }
+
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
