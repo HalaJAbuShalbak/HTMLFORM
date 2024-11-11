@@ -150,10 +150,10 @@ value="Website"
   document.getElementById('customForm').addEventListener('submit', async function(e) {
     e.preventDefault();
     
-    const formData = new FormData(e.target.value);
+    const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
     console.log(data)
-    fetch('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/s/AKfycbz1FYD9aPxOjvJ0uWwx-xE8fFZ9Dh_FzMEAMUBPEuMLSq8z-E1jIO83z-knB1FY4llt/exec/', {
+    fetch('https://cors-anywhere.herokuapp.com/https://script.google.com/macros/AKfycbz1FYD9aPxOjvJ0uWwx-xE8fFZ9Dh_FzMEAMUBPEuMLSq8z-E1jIO83z-knB1FY4llt/exec/', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify(data)
